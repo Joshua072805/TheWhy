@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The why</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    #search-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    #search {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    #result-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    #results {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+      padding: 8px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      column-count: 1px;
+    }
+
+    li:hover {
+      background-color: #f0f0f0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="search-container">
+    <label for="search">Search: </label>
+    <input type="text" id="search" oninput="performSearch()">
+  </div>
+
+  <div id="result-container">
+    <h2>Search Results:</h2>
+    <ul id="results"></ul>
+  </div>
+
+  <script>
+    // Sample data with links for demonstration
+    const data = [
+      { label: "Do God exist?", link: "Topic1.html" },
+     { label: "Who created God?", link: "Topic2.html" }
+     { label: "If God is Just, why good people Suffer?", link: "Topic4.html" }
+      // Add more data as needed
+    ];
+
+    function performSearch() {
+      // Get the search input value
+      const searchInput = document.getElementById('search').value.toLowerCase();
+
+      // Filter data based on the search input
+      const searchResults = data.filter(item => item.label.toLowerCase().includes(searchInput));
+
+      // Display search results
+      displayResults(searchResults);
+    }
+
+    function displayResults(results) {
+      const resultsContainer = document.getElementById('results');
+      // Clear previous results
+      resultsContainer.innerHTML = '';
+
+      // Display new results
+      results.forEach(result => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = result.link;
+        link.textContent = result.label;
+        listItem.appendChild(link);
+        resultsContainer.appendChild(listItem);
+      });
+    }
+  </script>
+
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wikipedia-like Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            padding: 10px
+        }
+
+        header {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 10px;
+            
+        }
+
+        nav {
+            margin-top: 10px
+  
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        article {
+            margin-top: 20px;
+            padding: 20px
+            background-color
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+        
+        
+    </style>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QUESTIONS</h1>
+    </header>
+
+    </div>
+        <nav>
+            <ul>
+
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </nav>
+    <article>
+      
+        <h2>THE REASONS</h2>
+       
+        <p>“Come now, and let us reason together,” Says the LORD, “Though your sins are like scarlet, They shall be as white as snow; Though they are red like crimson, They shall be as wool. </p>
+        
+        <p2> Global scepticism and secularism is in the trend in the modern world, according to National Geographic there is more people who loses faith than the gains, in 25 years Christianity will be in minority in terms of population. Gladly in the Philippines only 0.04 has no religious affiliation according to Wikipedia. But as the world praised itself for it's glory so is the foolishness of the wise in this world that they rather believe in their own understanding. If people are skeptical we should provide them reasons, this website will provide reasons and logical explanation of why we should return to God, all mighty.</p2
+        
+        <p3> In this website, the viewer can read skeptical questions, and then they can also provide their opinions and ask more! and also encourage a healthy discussion </p3>
+   </article>
+   <article1>
+        <h2>Featured Topics</h2>
+        <ul>
+            <li><a href="Topic1.html">Do god exist?</a></li>
+            <li><a href="Topic2.html">Who created God?</a></li>
+            <li><a href="Topic4.html">If God is Just, why do good people suffer?</a></li>
+            <li><a href="Topic5.html">How about people who never heard about the Gospels? Are they damned because of their ignorance? </a></li>
+            <li><a href="Topic6.html">Why the Bible is True? and not other Holy scriptures?</a></li>
+            <li><a href="Topic7.html">Can Jeffrey Dahmer go to heaven if he just ask forgiveness?</a></li>
+            <li><a href="Topic8.html">Why do animals have to suffer? </a></li>
+            <li><a href="Topic9.html">What if you are wrong about Christianity?</a></li>
+            <li><a href="Topic10.html">Can God just be a fragments of human imagination?</a></li>
+        </ul>
+    </article1>
+    
+<body>
+
+<h2> Let us have discussion!</h2>
+    <div class="comment-section">
+        <div class="comment">
+            <div class="user">Gamboa Bryan Joshua</div>
+            <div class="timestamp">Posted on: 2023-12-12 10:30 AM</div>
+            <p>Test</p>
+        </div>
+
+        <!-- More comments can be added here -->
+
+        <div class="comment-form">
+            <textarea placeholder="Add your comment..."></textarea>
+            <button onclick="postComment()">Post Comment</button>
+        </div>
+    </div>
+
+    <script>
+        function postComment() {
+            // Add logic to handle posting comments
+            alert("Comment posted!"); // Example alert, replace with actual logic
+        }
+    </script>
+    <footer>
+        <p>&copy; The why's . All rights reserved.</p>
+        
+        
+</body>
+
+
